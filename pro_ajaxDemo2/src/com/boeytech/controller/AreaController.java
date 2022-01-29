@@ -37,5 +37,7 @@ public class AreaController extends HttpServlet {
         Gson gson = new Gson();
         String json = gson.toJson(areas);
         resp.getWriter().write(json);
+        System.out.println(json);
+
     }
 }
